@@ -43,5 +43,5 @@ I learned how to use tailwind custom properties, which is configuring my themes 
 ## Author
 
 - Frontend Mentor - [@T-tech26](https://www.frontendmentor.io/profile/T-tech26)
-- LinkedIn - [@tariladei-doutua](https://www.your-site.com)
-- Twitter - [@TariDoutua](https://www.twitter.com/yourusername)
+- LinkedIn - [@tariladei-doutua](https://www.linkedin.com/posts/tariladei-doutua-109059226_frontend-mentor-responsive-calculator-app-activity-7041910301679640576--eRV?utm_source=share&utm_medium=member_desktop)
+- Twitter - [@TariDoutua](https://twitter.com/TariDoutua/status/1636142309073903624)
