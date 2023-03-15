@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+    </style>
+  </head>
+  <body class="body theme-first bg-main-bg w-full flex items-center justify-center flex-col min-h-screen max-w-screen-2xl mx-auto">
+    <main class="w-full sm:w-[85%] md:w-[70%] lg:w-1/2 h-full mb-5 flex flex-col items-center">
+      <section class="w-[80%] sm:w-4/6 h-auto">
+        <div class="w-full h-auto flex justify-between items-center">
+          <h1 class="text-text text-[1.5rem] font-[700] w-[60%] lg:w-[70%]">calc</h1>
+
+          <div class="flex justify-between items-center w-[40%] lg:w-[30%] h-auto">
+            <h3 class="text-text text-[.7rem] font-[600] w-1/2 self-end text-center">THEME</h3>
+            
+            <div class="flex justify-center items-center w-1/2 flex-col">
+              <div class="flex justify-evenly w-full">
+                <label for="theme-one" class="text-text text-xs">1</label>
+                <label for="theme-three" class="text-text text-xs">2</label>
+                <label for="theme-two" class="text-text text-xs">3</label>
+              </div>
+              
+              <div class="flex justify-evenly w-full bg-keypad-bg p-1 rounded-lg">
+                <input type="radio" name="theme-one" id="theme-one" checked class="accent-radio-color appearance-none w-2.5 h-2.5 rounded-[50%] bg-keypad-bg checked:bg-radio-color cursor-pointer">
+                <input type="radio" name="theme-two" id="theme-two" class="accent-radio-color appearance-none w-2.5 h-2.5 rounded-[50%] bg-keypad-bg checked:bg-radio-color cursor-pointer">
+                <input type="radio" name="theme-three" id="theme-three" class="accent-radio-color appearance-none w-2.5 h-2.5 rounded-[50%] bg-keypad-bg checked:bg-radio-color cursor-pointer">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-[80%] sm:w-4/6 h-auto">
+        <div class="bg-screen-bg w-full h-[80px] text-3xl sm:text-4xl text-text font-[700] text-right px-6 py-4 my-5 rounded-lg"><h1 class="screen overflow-hidden w-full h-[50px]"></h1></div>
+      </section>
+
+      <section class="w-[80%] sm:w-4/6 h-auto">
+        <div class="w-full h-auto px-6 py-6 bg-keypad-bg rounded-lg grid grid-cols-4 grid-rows-5 gap-5">
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn7">7</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn8">8</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn9">9</button>
+          <button class="bg-key-bg px-0 py-2 text-text-toggle text-lg sm:text-xl font-[700] rounded-lg shadow-key-shadow hover:bg-key-hover del-btn">DEL</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn4">4</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn5">5</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn6">6</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover plus-btn">+</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn1">1</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn2">2</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn3">3</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover sub-btn">-</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover dot-btn">.</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover btn0">0</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover div-btn">/</button>
+          <button class="text-text-btn bg-key-btn-bg texl-xl sm:text-2xl font-[700] px-0 py-2 rounded-lg shadow-key-btn-shadow hover:bg-key-btn-hover mult-btn">X</button>
+          <button class="col-span-2 bg-key-bg px-0 py-2 text-text-toggle text-lg sm:text-xl font-[700] rounded-lg shadow-key-shadow hover:bg-key-hover reset-btn">RESET</button>
+          <button class="col-span-2 bg-key-toggle-bg px-0 py-2 text-text-toggle text-lg sm:text-xl font-[700] rounded-lg shadow-key-toggle-shadow hover:bg-key-toggle-hover equal-btn">=</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-[.7rem] text-center text-text">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="text-text underline">Frontend Mentor</a
+      >. Coded by <a href="#" class="text-text underline">Tari Doutua</a>.
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
